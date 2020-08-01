@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./index-img/coding-beginners-logo.png">
+    <meta name="keywords" content="coding beginners, about page, about site creator, about site">
+    <meta name="description" content="Coding Beginners is created to provide a complete learning point for programming enthusiasts containig free programming courses and developers blog.">
+    <title>About &nbsp;|&nbsp; Coding Beginners</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/body-style.css">
+    <link rel="stylesheet" href="./css/about-style.css">
+    <script src="js/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body id="body-theme" class="light-theme-style" onload="startUpTheme()">
+    <header>
+      <nav id="header-navbar" class="navbar navbar-default navbar-fixed-top light-theme-navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Coding Beginners</h1></a>
+            </div>
+            <div class="dark-theme" id="theme" onclick="handleThemes()">
+              <button>
+                <div id="theme-button">
+                  Dark Mode
+                </div>
+              </button>
+            </div>
+            <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle Navbar</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="navlist" class="nav navbar-nav navbar-right light-theme-navlist">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./courses/courses-home.html">Courses</a></li>
+              <li><a href="./blog/blog-home.html">Blog</a></li>
+              <li><a href="./about.html" id="active">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="create-dark"></div>
+    <div class="container-fluid light-theme-content" id="content">
+      <section class="row" id="heading">
+        <div class="container-fluid row-items-content">
+          <h2>About</h2>
+        </div>
+      </section>
+      <section class="row" id="myself">
+        <div class="row-items-content">
+          <h3>Myself</h3>
+          <p>
+            I am Bipul Harsh, creator of this website and currently in 1st year of B. Tech in Computer Science and Engineering from <a href="#">Chandigarh Groups of Colleges, Landran</a>. Helping my peers has always excited me to learn something new from what I had learned, and my this habbit helped me in creating this website to not be limited within class but rather to reach all corner of the world through this site. I am also learning new things in this field as you do and have faced a lot of obstacles in this path, my main motive is to share all the skills I have gained as well as the way I had sorted various problems to let you prepare in advance for such situations to tackle.
+          </p>
+        </div>
+      </section>
+      <section class="row" id="site">
+        <div class="row-items-content">
+          <h3>Site</h3>
+          <p>
+            This site has been divided into two parts:
+            <ul>
+              <li>Courses</li>
+              <li>Developers Blog</li>
+            </ul>
+          </p>
+          <h4>Courses</h4>
+          <p>
+            In courses basically my goal for now is to cover basics of some most common programming languages like C, C++, and Python which are being used as a first step by any programming enthusiasts toward coding. In each course user can join a community group to ask any doubt or to help others, they will also get some questions as exercise after every lecture to put their learning into action. Code samples that can be copied to clipboard by a single click are also provide as examples in lectures. Soon, I will add dark mode feature also in learning sections so you can easily read in night without straining your eyes.
+          </p>
+          <h4>Developers Blog</h4>
+          <p>
+            With blog section I can share skills, tips and tricks that I have learned so far, which helps me to tackle problems regarding software, academic or programming realated issues. Here I have also provide feature where you can contrubute to this site by posting your blogs on any topic that could benefit users. Each contributer's name will be displayed on thier blogs, and could also be awareded with prizes as per their contrubution.
+          </p>
+          <h4>Additional Features</h4>
+          <p>
+            I have created this website responsive with the help of bootstrap which enables it to get adjust itself as per screen size, making it compatible with any screen.
+          </p>
+        </div>
+      </section>
+      <section class="row" id="user-privacy">
+        <div class="row-items-content">
+          <h3>User Privacy</h3>
+          <p>
+            Keeping users personal data safe will always be my optimum priority and that's why you don't see any SignIn or SignUp page yet. As currently, I am learning backend web development, it will take me some time to fully understand all concepts. Regarding email for subscription, it is stored secure in server and if you want you can unsubscribe for the newsletter anytime.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer id="panel-footer" class="panel-footer light-theme-footer">
+      <nav>
+        <div class="container-fluid" id="footer-body">
+          <div class="row" id="check">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="footer-banner">
+              <h2><a href="./index.html">Coding Beginners</a></h2>
+              <p>Online Programming Courses and Blogs</p>
+              <div class="share-page-section">
+                <div class="share-line">
+                  Share On
+                </div>
+                <div class="share-link">
+                  <div class="icon-container">
+                    <a href="#"><img src="./index-img/facebook-icon.png" alt="Facebook"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="./index-img/twitter-icon.png" alt="Twitter"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="./index-img/whatsapp-icon.png" alt="WhatsApp"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="./index-img/gmail-icon.png" alt="Gmail"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h3>Connect With Me On</h3>
+              <ul class="content-list">
+                <a href="https://github.com/Bipul-Harsh" target="_blank"><li>GitHub</li></a>
+                <a href="#" target="_blank"><li>LinkedIn</li></a>
+                <a href="#" target="_blank"><li>Facebook</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <h3>About</h3>
+              <ul class="content-list">
+                <a href="./about.html#myself" target="_blank"><li>Myself</li></a>
+                <a href="./about.html#site" target="_blank"><li>Site</li></a>
+                <a href="./about.html#user-privacy" target="_blank"><li>User Privacy</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-4 col-xs-12">
+              <h3>Sign up for newsletter</h3>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
+              <form action="process.php" method="post" onsubmit="return checkOnSubmit()" id="subscription-form">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="Subscribe">
+              </form>
+              <p id="submit-error"></p>
+            </div>
+          </div>
+          <div class="row" id="legal">
+            <p>Copyright &copy; 2020 Coding Beginners | Bipul Harsh</p>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

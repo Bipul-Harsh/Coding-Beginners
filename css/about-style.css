@@ -1,0 +1,57 @@
+section .row-items-content{
+  padding: 40px 15px;
+}
+section h3{
+  text-align: center;
+  font-size: 2.6em;
+  margin-bottom: 30px;
+}
+section p{
+  text-align: justify;
+  font-size: 1.4em;
+}
+/******Section 1***********/
+#heading{
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#heading h2{
+  text-align: center;
+  font-size: 3.2em;
+  color: #fff;
+}
+#heading .row-items-content{
+  background-color: rgba(0,0,0,.5);
+}
+@media (max-width: 767px){
+  #heading{
+    background-image: url("../index-img/about-page-intro-background-xs.jpg");
+  }
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  #heading{
+    background-image: url("../index-img/about-page-intro-background-md-sm.jpg");
+  }
+}
+@media (min-width: 1200px){
+  #heading{
+    background-image: url("../index-img/about-page-intro-background.jpg");
+  }
+}
+/********Section 2**********/
+
+/********Section 3**********/
+#site .row-items-content{
+  background-color: rgba(237,236,47,.2);
+}
+#site ul{
+  font-size: 1.3em;
+}
+#site h4{
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/********Section 4*********/

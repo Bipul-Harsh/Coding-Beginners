@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script data-ad-client="ca-pub-6808852285815678" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../index-img/coding-beginners-logo.png">
+    <meta name="keywords" content="linux terminal basics, linux terminal commands, developers blog,coding beginners, ">
+    <meta name="description" content="Linux Terminal Commands explained covering all basic commands being used frequently by developers. | Posted On: 06/07/2020 By: Bipul Harsh">
+    <title>Linux Teminal Basics - Developers Blog</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/body-style.css">
+    <link rel="stylesheet" href="./blog-css/blog-style.css">
+    <script src="../js/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="../js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body id="body-theme" class="light-theme-style" onload="startUpTheme()">
+    <header>
+      <nav id="header-navbar" class="navbar navbar-default navbar-fixed-top light-theme-navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="./blog-home.html"><h1>Developers Blog</h1></a>
+            </div>
+            <div class="dark-theme" id="theme" onclick="handleThemes()">
+              <button>
+                <div id="theme-button">
+                  Dark Mode
+                </div>
+              </button>
+            </div>
+            <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle Navbar</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="navlist" class="nav navbar-nav navbar-right light-theme-navlist">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../courses/courses-home.html">Courses</a></li>
+              <li><a href="./blog-home.html" id="active">Blog</a></li>
+              <li><a href="../about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="create-dark"></div>
+    <div class="container-fluid light-theme-content" id="content">
+      <section class="row" id="heading">
+        <div class="container-fluid row-items-content">
+          <h2>Linux Terminal Basics</h2>
+          <div class="row">
+            <div class="">
+              <ul>
+                <li>Posted On: 06-07-2020</li>
+                <li>By: Bipul Harsh</li>
+              </ul>
+            </div>
+            <div class="">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row" id="blog-content">
+        <div class="container-fluid row-items-content">
+          <p>Knowing linux terminal is as important as knowing any programming language before downloading its IDE. As almost, all linux users who are mainly developers or coding enthusiasts just use terminal to do anything. So let's start learning some of its basics, including most common terminal commands you should definetely know after installing linux OS. To demonstrate terminal command I will use ubuntu 19.10 but as these commands are similar to any debian based or some even in linux based operating system, you don't need to worry whether it will run on you linux distribution or not. So let's begin by pressing <span class="code-snippet">ctrl+alt+t</span> to open terminal.</p>
+          <h3 id="apt-get-update-and-upgrade">apt-get update && apt-get upgrade</h3>
+          <p>You should run this command atleast once in a week or month, as running this will download and install any update for your linux operating system or for any software installed in it, so just run it in terminal:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(0)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="sudo apt-get update && apt-get upgrade" readonly>
+          </div>
+          <p>This command will run only for Debian based distrubution like Ubuntu, or Kali Linux.</p>
+          <h3 id="clear-command">clear</h3>
+          <p>To clear the terminal screen you can use this command, as it will clean out whatever the commands you have passed out and the output displayed on terminal. Let's try it out by clearing screen showing output of what we have run earlier:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(1)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="clear" readonly>
+          </div>
+          <p>I hope it clears out your screen :)</p>
+          <h3 id="top-command">top</h3>
+          <p>Running this command will show you system utilazation It can display system summary information as well as a list of processes or threads currently being managed  by  the  Linux  kernel. So just run and see all amount of memory and processor being used:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(2)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="top" readonly>
+          </div>
+          <p>To stop the usage display you can press <i>q</i> or <i>ctrl+c</i>.</p>
+          <h3 id="history-command">history</h3>
+          <p>You can use history command to check all commands you have run earlier on terminal, let's check it by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(3)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="history" readonly>
+          </div>
+          <p>If you want you can clear history list by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(4)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="history -c" readonly>
+          </div>
+          <h3 id="ls-command">ls</h3>
+          <p><i>ls</i> command is use to give you the list of directories and files present in your current directory, and for that let's run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(5)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="ls" readonly>
+          </div>
+          <p>You can apply <i>-la</i> property that will not only show hidden files but, also the previliges associated with it. Let's run this command to see output:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(6)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="ls -la" readonly>
+          </div>
+          <h3>cd (Change Directory)</h3>
+          <p>This command will let you change or switch directories, I hope you are currently in your user directory so let's switch to desktop dir by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(7)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cd Desktop/" readonly>
+          </div>
+          <p>You can make it a little quick by pressing tab after entering few starting words of directory name. Let's get back to your user directory by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(8)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cd .." readonly>
+          </div>
+          <p>Now just paste it and press TAB.</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(9)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cd Des" readonly>
+          </div>
+          <p>I hope it works on your terminal.</p>
+          <h3 id="mkdir-command">mkdir</h3>
+          <p>With this command you can create a folder or directory by typing <span class="code-snippet">mkdir dir_name</span>. Let's create a folder named terminal by running: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(10)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="mkdir terminal" readonly>
+          </div>
+          <p>This might create this folder in your <i>Desktop/</i> if you have run the commands mentioned above.</p>
+          <h3 id="pwd-command">pwd (Print name of Working Directory)</h3>
+          <p>This will print your current directory name you are working on, just run</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(11)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="pwd" readonly>
+          </div>
+          <h3 id="rmdir">rmdir (Remove Directory)</h3>
+          <p>It is use to delete or remove a directory or folder, to do this type <span class="code-snippet">remdir dir-name</span>. Let's remove the <i>terminal</i> directory we have created earlier by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(12)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="rmdir terminal" readonly>
+          </div>
+          <p>To remove an non-empty directory you can use <i>rm</i> with -r property which stands for reccursive remove. Let's create file <i>temp</i>and temp2 inside it and delete it by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(13)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="rm -r temp" readonly>
+          </div>
+          <h3 id="touch-command">touch</h3>
+          <p>This command is for creating file and its syntax is <span class="code-snippet">touch file_name.ext</span>. Let's create a file named hello.txt in our current directory, for this run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(14)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="touch hello.txt" readonly>
+          </div>
+          <p>You can check whether your file is being created or not by running <i>dir</i> command.</p>
+          <h3 id="rm-command">rm (Remove)</h3>
+          <p>This command is mainly use to remove file but can also be use to delete an empty or non-empty directories as mentioned above. To remove any file type <span class="code-snippet">rm file_name.ext</span>. Let's try to remove hello.txt by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(15)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="rm hello.txt" readonly>
+          </div>
+          <p>To remove any empty directory (as not mentioned above) using rm command, type <span class="code-snippet">rm -d dir_name</span>. In example you can recreate temp folder and remove it using this command, for that run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(16)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="mkdir temp" readonly>
+          </div>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(17)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="rm -d temp" readonly>
+          </div>
+          <h3 id="cp-command">cp (Copy)</h3>
+          <p>This command is use to copy files and folder or directories from on place to another. Let's first start with copying files for that you simply need to type <span class="code-snippet">cp ./dirA/file ./dirB/file</span>, to perform it create <i>tempA</i> and <i>tempB</i> and create file <i>hello.txt</i> in <i>tempA</i>. In order to copy <i>hello.txt</i> from tempA to tempB run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(18)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cp ./tempA/hello.txt ./tempB" readonly>
+          </div>
+          <p>For file, let's try to copy tempB into tempA by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(19)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cp -r ./tempB ./tempA" readonly>
+          </div>
+          <h3 id="mv-command">mv (Move)</h3>
+          <p>This command is use to either move file or directory from one location to another. Let's first move file from one directory to another, for this create two directories <i>dirA</i> and <i>dirB</i>, also create <i>hello.txt</i> inside <i>dirA</i>. In order to move <i>hello.txt</i> from dirA to dirB run: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(20)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="mv ./dirA/hello.txt ./dirB" readonly>
+          </div>
+          <p>Let's try to move dirA into dirB by running: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(21)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="mv ./dirA ./dirB" readonly>
+          </div>
+          <h3 id="sudo-su-command">sudo su</h3>
+          <p>With this command you can run terminal as adminstrator, no more need to give password for command needs administrative privilege, so let's run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(22)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="sudo su" readonly>
+          </div>
+          <p>This will ask you to enter password, just enter it and you will no more need enter password anymore. You can come out from root user to normal user by running <span class="code-snippet">exit</span>. Remeber you should never create any file or directory as root users doing so will not let you to save or create anything on it as a normal user.</p>
+          <h3>chmod (Change File Mode)</h3>
+          <p>As you have seen earlier with <i>ls -l &lt;file&gt;</i> you can see privileges given to admin, group and public. But with this command you can now set privileges for any file as per you need and for that you need to type <span class="code-snippet">sudo chmod &lt;for_admin&gt;&lt;for_group&gt;&lt;for_public&gt; &lt;file_name&gt;</span>. Here, before doing that let's understand different type of privileges and number assigned to them: </p>
+          <ul>
+            <li>read (r) : will allow to read any file, and is assigned with digit 4.</li>
+            <li>write (w) : will allow to write on any file, and is assigned with digit 2.</li>
+            <li>execute (x) : will allow to execute any file( mainly code files), and is assigned with digit 1.</li>
+          </ul>
+          <p>In order to give different privileges to different type of users, you have to sum the code and assigned to each user on <i>chmod</i>. For example, if you want to give privileges to hello.txt file where </p>
+          <ul>
+            <li>Admin: will get read, write and execute then add 4+2+1 = 7.</li>
+            <li>Group: will get read, and write but not execute permission then add 4+2 = 6.</li>
+            <li>Users: will only get read permission then only 4.</li>
+          </ul>
+          <p>then run the command as given below:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(23)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="sudo chmod 764 hello.txt" readonly>
+          </div>
+          <p>Now, you can the privileges you have assigned to hello.txt file by running</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(24)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="ls -l hello.txt" readonly>
+          </div>
+          <h3>man (Manual)</h3>
+          <p>With this, you can read manual of any command by typing <span>man &lt;command&gt;</span>, or you can use &lt;command --help&gt; for same purpose. Let's check the manual of chmod by running: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(25)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="man chmod" readonly>
+          </div>
+          <p>To quit press q, will come back to your terminal.</p>
+          <h3>Checking Version</h3>
+          <p>You can check about version of you pc by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(26)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="uname -a" readonly>
+          </div>
+          <p>You can check other attributes with either --help or man. For knowing version of any software like knowing version of python3 enter:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(27)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="python3 --version" readonly>
+          </div>
+          <p>It will tell you its version, you can apply <i>--version</i> to know version of any other software.</p>
+          <br>
+          <p>With this you have completed terminal basics, and now you can do various task without needing your mouse.</p>
+        </div>
+      </section>
+    </div>
+    <footer id="panel-footer" class="panel-footer light-theme-footer">
+      <nav>
+        <div class="container-fluid" id="footer-body">
+          <div class="row" id="check">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="footer-banner">
+              <h2><a href="../index.html">Coding Beginners</a></h2>
+              <p>Online Programming Courses and Blogs</p>
+              <div class="share-page-section">
+                <div class="share-line">
+                  Share On
+                </div>
+                <div class="share-link">
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/facebook-icon.png" alt="Facebook"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/twitter-icon.png" alt="Twitter"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/whatsapp-icon.png" alt="WhatsApp"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/gmail-icon.png" alt="Gmail"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h3>Connect With Me On</h3>
+              <ul class="content-list">
+                <a href="https://github.com/Bipul-Harsh" target="_blank"><li>GitHub</li></a>
+                <a href="#" target="_blank"><li>LinkedIn</li></a>
+                <a href="#" target="_blank"><li>Facebook</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <h3>About</h3>
+              <ul class="content-list">
+                <a href="../about.html#myself" target="_blank"><li>Myself</li></a>
+                <a href="../about.html#site" target="_blank"><li>Site</li></a>
+                <a href="../about.html#user-privacy" target="_blank"><li>User Privacy</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-4 col-xs-12">
+              <h3>Sign up for newsletter</h3>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
+              <form action="process.php" method="post" onsubmit="return checkOnSubmit()" id="subscription-form">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="Subscribe">
+              </form>
+              <p id="submit-error"></p>
+            </div>
+          </div>
+          <div class="row" id="legal">
+            <p>Copyright &copy; 2020 Coding Beginners | Bipul Harsh</p>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script data-ad-client="ca-pub-6808852285815678" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../index-img/coding-beginners-logo.png">
+    <meta name="keywords" content="windows cmd basics, windows command prompt basics, cmd basics, developers blog,coding beginners, ">
+    <meta name="description" content="Windows Command Prompt explained covering all basic commands being used frequently by developers. | Posted On: XX/XX/XXXX By: Bipul Harsh">
+    <title>Windows Commnad Prompt Basics - Developers Blog</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/body-style.css">
+    <link rel="stylesheet" href="./blog-css/blog-style.css">
+    <script src="../js/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="../js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body id="body-theme" class="light-theme-style" onload="startUpTheme()">
+    <header>
+      <nav id="header-navbar" class="navbar navbar-default navbar-fixed-top light-theme-navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="./blog-home.html"><h1>Developers Blog</h1></a>
+            </div>
+            <div class="dark-theme" id="theme" onclick="handleThemes()">
+              <button>
+                <div id="theme-button">
+                  Dark Mode
+                </div>
+              </button>
+            </div>
+            <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle Navbar</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="navlist" class="nav navbar-nav navbar-right light-theme-navlist">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../courses/courses-home.html">Courses</a></li>
+              <li><a href="./blog-home.html" id="active">Blog</a></li>
+              <li><a href="../about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="create-dark"></div>
+    <div class="container-fluid light-theme-content" id="content">
+      <section class="row" id="heading">
+        <div class="container-fluid row-items-content">
+          <h2>Windows Command Prompt Basics</h2>
+        </div>
+      </section>
+      <section class="row" id="blog-content">
+        <div class="container-fluid row-items-content">
+          <p>Even though Windows provides a powerful graphical user interface for various operations, like installing any software, creating folder/file, cut, copy, paste any many more. But for a professional developer these method are bit lenghty as if they have to do such operations repeatedly on a large scale of files or folders. Using Windows command prompt makes these tasks very quick and easy and provide even way more features that makes developers to switch to their keyboard rather than using mouse for such operations. I also personally use Windows CMD prompt a lot and now finding it way more faster and easier. So let's begin (and don't forget to open your Windows Command Prompt):</p>
+          <h3 id="cd-chdir-command">cd/chdir (Change Directory)</h3>
+          <p>This command is use to either display your current directory or folder where your command prompt is pointing, or to switch to some another directory. When you open your command prompt it is initailly being pointed to <span class="code-snippets">C:\Users\UserName\</span>. Let's check it by running </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(0)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cd" readonly>
+          </div>
+          <p>so you can see that cmd is currently pointing to system user directory. Now in order to switch to another directory, just write <span class="code-snippet">cd &lt;dir_name&gt;</span> this will move your cmd pointer to that directory. Let's check it out with an example, by first creating a folder named "cmd_exp" in users directory, and in cmd paste code following code: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(1)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cd cmd_exp" readonly>
+          </div>
+          <p>You see that your cmd is now pointing to <span class="code-snippet">C:\Users\UserName\cmd_exp</span>. Even though if your directory name has space it will work (as on doing in Windows 10 cmd prompt) or you can enclose directory name inside double quotes. For example, you can check it by creating a folder "cmd exp" inside your user name directory and switch to it typing</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(2)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="cd .." readonly>
+          </div>
+          <p><i>To get back to your user name directory from cmd_exp directory, and then type: </i></p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(3)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='cd "cmd exp"' readonly>
+          </div>
+          <p>Now, if you have to do above operation on another drive then first you have to switch to that drive typing <span class="code-snippet">&lt;driveLabel&gt;</span>. For example to switch to drive D:/ in my computer</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(4)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="d:" readonly>
+          </div>
+          <p>doing so will switch command prompt to drive D: and with above operation then you can further go to another folder. One extra feature you can use that after cd on writing few letters of dir name you can press tab which will auto complete directory name for you.</p>
+          <h3 id="md-mkdir-command">md/mkdir (Make Directory)</h3>
+          <p>This command is used to create a directory or folder at a location to use it type <span class="code-snippet">md &lt;dir_name&gt;</span> in practical let's create a dir inside desktop.</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(5)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="mkdir cmd_learning" readonly>
+          </div>
+          <p>This will create a folder names <i>cmd_Folder</i> in D:/ drive if you have run the previous code given above.</p>
+          <h3 id="rd-rmdir-command">rd/rmdir (Remove Directory)</h3>
+          <p>This command as specified is used to remove or delete a folder and to use it, type <span class="code-snippet">del &lt;dir_name&gt;</span>. For example to delete folder or remove directory <i>cmd_learning</i> type</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(6)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value="rd cmd_learning" readonly>
+          </div>
+          <p>This will remove your <i>cmd_learning</i> directory. Now lets create another directory with name having space in between, remember for doing so you need to put directory name under quotes.</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(7)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='mkdir "./cmd learning/lesson1/class1"' readonly>
+          </div>
+          <p>In above code the first <i>./</i> was representing the current directory you cmd prompt pointing to, then <i>./cmd learning</i> will create folder cmd learning in current location then <i>./cmd learning/lesson1/class1</i> creates lesson1 inside cmd learning and class1 inside lesson1.</p>
+          <p>In order to delete <i>lesson1</i> directory inside <i>cmd learning</i> first switch to <i>cmd learning</i> by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(8)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='cd "cmd learning"' readonly>
+          </div>
+          <p>Then type: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(9)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='rd lesson1' readonly>
+          </div>
+          <p>This will give error <i>The directory is not empty.</i> As lesson1 don't delete directory having sub-directories in it. In order to delete it you have to put /s after rd which is stands for strict remove. In cmd type: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(10)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='rd /s lesson1' readonly>
+          </div>
+          <p>This will prompt you to confirm, just type <i>y</i> and press enter. You can also avoid this conformation prompt by putting <i>/q</i> after <i>rd /s</i> which is stands for quiet mode. Now let's first create lesson1 back to cmd learning directory </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(11)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='mkdir lesson1' readonly>
+          </div>
+          <p>now let's move out form cmd learning directory by running</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(12)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='cd ..' readonly>
+          </div>
+          <p>and type</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(13)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='rd /s /q "cmd learning"' readonly>
+          </div>
+          <p>You have notice that this time that it didn't prompt you to confirm.</p>
+          <h3 id="type-command">type</h3>
+          <p>It is used to display the contents of a file, but here we can also use it to create a file to do so you have to type <span class="code-snippet">type nul > file_name</span>, this will create an empty file. Let's make an file with name hello.txt in current vol D:/</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(14)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='type nul > hello.txt' readonly>
+          </div>
+          <p>here with <i>nul > hello.txt</i>, it means that we don't want to put anything inside file by pasisng null. Here > will create or replace file if it exist there. If you want to just create file rather replacing it with same existing file you can run</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(15)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='type nul >> hello.txt' readonly>
+          </div>
+          <p>Now you can check the file by running <span class="code-snippet">dir</span>.</p>
+          <h3 id="attrib-command">attrib (File Attribute)</h3>
+          <p>This command is used to either display or change file/folder attributes. In simple words with this we can check or give status to our file like readonly, sys file, hidden etc.</p>
+          <p>Let's first check the attributes which are present on our hello.txt file, and for this type:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(16)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='attrib' readonly>
+          </div>
+          <p>Here <i>A</i> means that our file is archive file type which simply means that the file has been flagged as needing to be backed up, or archived. Syntax for giving an attribute is <span class="code-snippet">attrib&nbsp;+&lt;attribute_type&gt;</span>. Now let's change our file to <i>readonly</i> and for that type:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(17)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='attrib +R hello.txt' readonly>
+          </div>
+          <p>Here + sign tells that we are adding readonly attribute to our <i>hello.txt</i> file, and now you can't save anything on it. We can remove this attribute by running:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(18)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='attrib -R hello.txt' readonly>
+          </div>
+          <p>Here - what tells that we are removing R attribute. Beside it we can use other attributes listed below:</p>
+          <ul>
+            <li>R - Read-only file attribute.</li>
+            <li>A - Archive file attribute.</li>
+            <li>S - System file attribute.</li>
+            <li>H - Hidden file attribute.</li>
+            <li>O - Offline attribute.</li>
+            <li>I - Not content indexed file attribute.</li>
+            <li>X - No scrub file attribute.</li>
+            <li>V - Integrity attribute.</li>
+            <li>P - Pinned attribute.</li>
+            <li>U - Unpinned attribute.</li>
+            <li>B - SMR Blob attribute.</li>
+          </ul>
+          <p>Now if you want that this attribute should be added or removed from similar files present in a directory or sub-directory inside it then you can apply /s after file name as <span class="code-snippet">attrib +/- attribute file_name /s</span>. You can try it by creating folder and sub-folder inside it then craeting file hello.txt in each folder and then run code:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(19)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='attrib +R hello.txt /s' readonly>
+          </div>
+          <p>You can even use it to see attribute of a particular file in a directory as well in its sub-directory. For example to check file attribute of <i>hello.txt</i> in in the folder and sub-folder you have created just run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(20)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='attrib hello.txt /s' readonly>
+          </div>
+          <p>Like above you can set some more properties like /D for include any process folder as well.</p>
+          <h3 id="del-erase-command">del/erase (Delete)</h3>
+          <p>This command is use to delete one or more files, in order to use it type <span class="code-snippet">del file_name</span>. Let's try to delete <i>hello.txt</i> file we have created, for that type:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(21)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='del hello.txt' readonly>
+          </div>
+          <p>Now the others properties which we can apply are:</p>
+          <ul>
+            <li>/P - Prompts for confirmation before deleting each file.</li>
+            <li>/F - Force deleting of read-only files.</li>
+            <li>/S - Delete specified files from all subdirectories.</li>
+            <li>/Q - Quiet mode, do not ask if ok to delete on global wildcard.</li>
+            <li>/A - Selects files to delete based on attributes.</li>
+          </ul>
+          <p>Some few examples are:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(22)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='del readOnlyFile.txt /F' readonly>
+          </div>
+          <h3 id="ren-rename-command">ren/rename</h3>
+          <p>This command is use to rename a file and to use it type <span class="code-snippet">ren old_fileName new_fileName</span>. For example to change name of hello.txt to bello.txt type:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(23)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='ren hello.txt bello.txt' readonly>
+          </div>
+          <h3 id="copy-command">copy</h3>
+          <p>This command is use when you have to copy a file contents into another file, it's syntax is <span class="code-snippet">copy file1 file2</span>. This will copy content from file1 to file2. You can check it by creating two files fileA and fileB and then put some text in fileA, now in order to copy from fielA to fileB run: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(24)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='copy fileA fileB' readonly>
+          </div>
+          <p>This will prompt you to confirm, if you want you can suppress this prompt with /y property</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(25)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='copy /y fileA fileB' readonly>
+          </div>
+          <h3 id="move-command">move</h3>
+          <p>This command is use to move one or more file from one folder to another folder, for this type <span class="code-snippet">copy filename ../folderB/</span>. The first .. siginifies that I want to move 1 directory back from my current directory, so let's try to move hello.txt we'll create in current drive to bello folder for that:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(26)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='mkdir bello' readonly>
+          </div>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(27)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='move hello.txt bello' readonly>
+          </div>
+          <p>You may have seen that hello.txt is moved to bello folder.</p>
+          <h3 id="time-command">time</h3>
+          <p>This command is used to either display or set system time, to change system time type</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(28)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='time' readonly>
+          </div>
+          <p>to only display time, avoiding prompt asking to enter time add property /t</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(29)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='time /t' readonly>
+          </div>
+          <h3 id="dir-command">dir</h3>
+          <p><i>dir</i> command is used to display list of files and sub-directories in given file. Let's check content of our current directory by running </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(30)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='dir' readonly>
+          </div>
+          <p>You can set properties listed below:</p>
+          <ul>
+            <li>/A - Displays files with specified attributes.</li>
+            <li>/B - Uses bare format (no heading information or summary).</li>
+            <li>/C - Display the thousand separator in file sizes.  This is thedefault.  Use /-C to disable display of separator.</li>
+            <li>/D - Same as wide but files are list sorted by column.</li>
+            <li>/L - Uses lowercase.</li>
+            <li>/N - New long list format where filenames are on the far right.</li>
+            <li>/P - Pauses after each screenful of information.</li>
+            <li>/Q - Display the owner of the file.</li>
+            <li>/R - Display alternate data streams of the file.</li>
+            <li>/S - Displays files in specified directory and all subdirectories.</li>
+            <li>/W - Uses wide list format.</li>
+          </ul>
+          <h3 id="application-version-checking">Version Checking</h3>
+          <p>To check version of any software that could be operable from cmd, you can check it by putting <i>--version</i> after it's name. Like for knowing version of python run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(31)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='python --version' readonly>
+          </div>
+          <h3 id="ver-command">ver</h3>
+          <p>To know your windows version run:</p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(32)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='ver' readonly>
+          </div>
+          <h3 id="open-file-in-cmd">Opening file in a text editor</h3>
+          <p>You can open any file in a text-editor through cmd, for example let's open hello.txt file using notepad which is default text editor in Windows, run: </p>
+          <div id="copy-code">
+            <div class="copy-switch-output">
+              <span class="copy-output"></span>
+              <input type="button" class="copy-button" onclick="copyToClipBoard(33)" title="Copy To Clipboard">
+            </div>
+            <input type="text" class="copyValue" value='notepad hello.txt' readonly>
+          </div>
+          <p>If you have reached here after reading and following above commands then congrats! you made it, now you can do various opearation on cmd. Please keep practicing and just stick to it.</p>
+        </div>
+      </section>
+    </div>
+    <footer id="panel-footer" class="panel-footer light-theme-footer">
+      <nav>
+        <div class="container-fluid" id="footer-body">
+          <div class="row" id="check">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="footer-banner">
+              <h2><a href="../index.html">Coding Beginners</a></h2>
+              <p>Online Programming Courses and Blogs</p>
+              <div class="share-page-section">
+                <div class="share-line">
+                  Share On
+                </div>
+                <div class="share-link">
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/facebook-icon.png" alt="Facebook"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/twitter-icon.png" alt="Twitter"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/whatsapp-icon.png" alt="WhatsApp"></a>
+                  </div>
+                  <div class="icon-container">
+                    <a href="#"><img src="../index-img/gmail-icon.png" alt="Gmail"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h3>Connect With Me On</h3>
+              <ul class="content-list">
+                <a href="https://github.com/Bipul-Harsh" target="_blank"><li>GitHub</li></a>
+                <a href="#" target="_blank"><li>LinkedIn</li></a>
+                <a href="#" target="_blank"><li>Facebook</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <h3>About</h3>
+              <ul class="content-list">
+                <a href="../about.html#myself" target="_blank"><li>Myself</li></a>
+                <a href="../about.html#site" target="_blank"><li>Site</li></a>
+                <a href="../about.html#user-privacy" target="_blank"><li>User Privacy</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-4 col-xs-12">
+              <h3>Sign up for newsletter</h3>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
+              <form action="process.php" method="post" onsubmit="return checkOnSubmit()" id="subscription-form">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="Subscribe">
+              </form>
+              <p id="submit-error"></p>
+            </div>
+          </div>
+          <div class="row" id="legal">
+            <p>Copyright &copy; 2020 Coding Beginners | Bipul Harsh</p>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
